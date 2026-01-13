@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting…</title>
+  <meta charset="UTF-8" />
+  <title>Checking your browser…</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <noscript>
-    <p>Please enable JavaScript.</p>
+    <p class="text-center mt-10">Please enable JavaScript.</p>
   </noscript>
 
   <script>
@@ -13,7 +16,26 @@
     }, 1200);
   </script>
 </head>
-<body>
-  <p>Checking browser…</p>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="text-center">
+    
+    <!-- Spinner -->
+    <div class="flex justify-center mb-4">
+      <div class="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Text -->
+    <p class="text-gray-700 font-medium animate-pulse">
+      Checking your browser…
+    </p>
+
+    <p class="text-sm text-gray-500 mt-1">
+      Please wait
+    </p>
+
+  </div>
+
 </body>
 </html>
